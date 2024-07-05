@@ -1,0 +1,636 @@
+h1,h2,p,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    box-sizing: border-box;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.menu-bar{
+    background-color: orange;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li.btnMenu{
+    display: none;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+}
+.menu ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+.menu ul.right{
+    float: right;
+}
+.menu ul.left li a{
+    text-transform: uppercase;
+}
+.menu ul.left li.logo a {
+    padding: 6px;
+}
+.menu ul.left li.logo a img{
+    height: 50px;
+}
+.box-cute{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    position: relative;
+}
+.box-cute h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: blue;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    
+}
+.box-cute .box{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(251, 255, 0);
+    border-radius: 0px 950px 0px 0px;
+    
+    /* -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 95% 0);
+     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 95% 0);  */
+}
+.slide-container{
+    /* background-color: rgb(252, 0, 0); */
+    padding: 0;
+}
+.slide-box{
+    height: 700px;
+    /* background-color: rgb(156, 28, 28); */
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: 0.3s;
+    /* border-radius: 15px 15px; */
+    border-radius: 0px 950px 0px 0px;
+}
+.btn-next{
+    right: -100px;  
+}
+.btn-back{
+    left: -100px;
+}
+.btn-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: blue;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    background-color: orange;
+    padding: 5px;
+     border-radius: 15px 15px;
+     cursor: pointer;
+}
+.btn-center:hover{
+    background-color: #eee;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(253, 249, 0);
+}
+.slide-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-box:hover .btn-next{
+    right: 40px;
+}
+.slide-box:hover .btn-back{
+    left: 40px;
+}
+.cate-box{
+    height: 300px;
+    margin-top: 10px;
+}
+.cate-box:hover img{
+    transform:scale(1.1) ;
+}
+.cate-box .box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.cate-box .box h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    background-color: rgba(238, 238, 238, 0.822);
+    text-align: center;
+    text-transform: uppercase;
+}
+.cate-box .box h1:hover{
+    background-color: rgba(255, 166, 0, 0.445);
+    color: #eee;
+    cursor: pointer;
+}
+.cate-box .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.head-title{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+
+}
+.head-title h1{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.head-title p{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.item-box{
+    height: 380px;
+    padding: 2px;
+}
+.item-box .box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.item-box .box .img-box{
+    width: 100%;
+    height: 55%;
+    background-color: antiquewhite;
+    position: relative;
+}
+.item-box .box .status{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.item-box .box .txt-box{
+    width: 100%;
+    height: 45%;
+    text-align: center;
+}
+.item-box .box .txt-box h1{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-box .box .txt-box p{
+    width: 100%;
+    text-align: center;
+}
+.item-box .box .txt-box p span.price{
+    color: red;
+    text-decoration: line-through;
+}
+.item-box .box .txt-box p span.dis{
+    color: green;
+}
+
+.item-box .box .txt-box ul li{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item-box .box .txt-box ul li:hover{
+    border: 1px solid crimson;
+}
+
+.item-box .box .txt-box ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-box .box .btn-fb{
+    width: 45px;
+    height: 45px;
+    background-color: blue;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: 0.3;
+}
+.item-box .box:hover .btn-fb{
+    opacity: 1;
+}
+.btn-cart{
+    background-color: red;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+}
+.btn-cart:hover{
+    
+    text-decoration: none;
+    color: black;
+}
+.more-home-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.more-home-box a {
+    float: none;
+    padding: 13px 25px;
+    background-color: green;
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0 #ccc;
+    margin-bottom: 20px;
+}
+
+.cate-box-2{
+    height: 300px;
+    margin-top: 10px;
+}
+.cate-box-2:hover img{
+    transform:scale(1.1) ;
+}
+.cate-box-2 .box2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.cate-box-2 .box2 h1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    background-color: rgba(255, 0, 0, 0.822);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+}
+.cate-box-2 .box2 h1:hover{
+    background-color: rgba(255, 255, 255, 0.568);
+    color: rgba(255, 0, 0, 0.822);
+    cursor: pointer;
+}
+.cate-box-2 .box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    transition: 0.3s;
+} 
+.logo-slide-box{
+    padding: 0;
+}
+.logo-slide ul {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.logo-slide ul li {
+    float: none;
+    display: inline-block;
+    margin: 10px;
+}
+.logo-slide ul li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.logo-slide ul li a img {
+    width: 100%;
+    height: 100%;
+}
+.bar-socail{
+    background-color: orange;
+}
+.social-menu ul {
+    float: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.social-menu ul li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+.social-menu ul li:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.social-menu ul li a {
+    display: block;
+    padding: 10px 10px 3px;
+    color: #fff;
+    font-size: 22px;
+}
+.foot{
+    padding: 0;
+    height: 300px;
+    /* text-align: center; */
+    text-align: justify;
+    padding-top: 50px;
+}
+.footer p{
+    color: rgb(0, 0, 0);
+    margin-top: 1px;
+}
+
+.go .img{
+    margin-top: 5px;
+}
+
+.footer-1 h1{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    
+}
+.footer-1 p{
+    
+    color: rgb(0, 0, 0);
+}
+
+.footer-1 p.text-p{
+    margin-top: 20px;
+}
+
+.footer-2 h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.footer-2 .socail{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.footer-2 p.text-p{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+/* .foot-cate ul li {
+    width: 100%;
+}
+.foot-cate ul li:first-child {
+    font-size: 25px;
+    font-weight: 700;
+}
+.foot-cate ul li a {
+    display: block;
+    padding: 3px 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.foot-about h1 {
+    font-size: 15px;
+}
+.foot-about p {
+    font-size: 13px;
+} */
+
+
+
+/* .social-menu ul .tooltip .tooltiptext{
+    opacity: 100%;
+    display: block;
+    padding: 10px 10px 3px;
+    color: #fff;
+    font-size: 22px;
+} */
+/* .social-menu ul .tooltip{
+    opacity: 100%;
+    display: block;
+    padding: 10px 10px 3px;
+    color: #fff;
+    font-size: 22px;
+    
+} */
+
+
+  
+  /* Tooltip text */
+  /* .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 99;
+  } */
+  
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } */
+
+
+
+  
+
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	/* .cate-box{
+        height: 200px;
+        margin-top: 10px;
+       
+    }
+    .cate-box .box h1{
+        font-size: 25px;
+    } */
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.slide-box{
+        height: 200%;
+    }
+    .btn-center{
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        background-color: orange;
+        padding: 5px;
+         border-radius: 15px 15px;
+    }
+    .cate-box{
+        height: 200px;
+        margin-top: 10px;
+       
+    }
+    .cate-box .box h1{
+        font-size: 25px;
+    }
+    .btn-cart{
+      font-size: 15px;
+        padding: 5px 13px;
+        color: white;
+       
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.menu ul li.btnMenu{
+        display: block;
+    }
+    .menu-bar ul.left li:not(.btnMenu){
+        display: none;
+    }
+        .slide-box{
+            height: 200%;
+        }
+        .btn-center{
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            text-shadow: 1px 1px 2px rgb(255, 255, 255);
+            background-color: orange;
+            padding: 5px;
+             border-radius: 15px 15px;
+        }
+        .cate-box{
+            height: 150px;
+            margin-top: 10px;
+           
+        }
+        .cate-box .box h1{
+            font-size: 25px;
+        }
+    }
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	.menu ul li.btnMenu{
+        display: block;
+    }
+    .menu-bar ul.left li:not(.btnMenu){
+        display: none;
+    }
+    .slide-box{
+        height: 200%;
+    }
+    .btn-center{
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        background-color: orange;
+        padding: 5px;
+         border-radius: 15px 15px;
+    }
+    .cate-box{
+        height: 200px;
+        margin-top: 10px;
+       
+    }
+    .cate-box .box h1{
+        font-size: 25px;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.menu ul li.btnMenu{
+        display: block;
+    }
+    .menu-bar ul.left li:not(.btnMenu){
+        display: none;
+        
+    }
+    .slide-box{
+        height: 250px;
+    }
+    .btn-center{
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        background-color: orange;
+        padding: 5px;
+         border-radius: 15px 15px;
+    }
+    .cate-box{
+        height: 150px;
+        margin-top: 10px;
+       
+    }
+    .cate-box .box h1{
+        font-size: 25px;
+    }
+}
